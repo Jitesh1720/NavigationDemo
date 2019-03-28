@@ -1,4 +1,4 @@
-package com.msp.navigationdemo;
+package com.example.navigationdemo;
 
 
 import android.os.Bundle;

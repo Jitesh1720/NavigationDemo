@@ -1,4 +1,4 @@
-package com.msp.navigationdemo;
+package com.example.navigationdemo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

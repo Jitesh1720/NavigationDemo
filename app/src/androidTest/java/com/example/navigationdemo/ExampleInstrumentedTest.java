@@ -1,4 +1,4 @@
-package com.msp.navigationdemo;
+package com.example.navigationdemo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

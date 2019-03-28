@@ -6,11 +6,11 @@
 
     <activity
         android:id="@+id/mainActivity2"
-        android:name="com.msp.navigationdemo.Main2Activity"
+        android:name="com.example.navigationdemo.Main2Activity"
         android:label="activity_main2" />
     <fragment
         android:id="@+id/flow_second_frag3"
-        android:name="com.msp.navigationdemo.SecondFragment"
+        android:name="com.example.navigationdemo.SecondFragment"
         tools:layout="@layout/fragment_second">
         <action
             android:id="@+id/action_flow_second_frag3_to_flow_second_frag"
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/flow_first_frag"
-        android:name="com.msp.navigationdemo.FirstFragment"
+        android:name="com.example.navigationdemo.FirstFragment"
         tools:layout="@layout/fragment_first">
         <action
             android:id="@+id/action_flow_first_frag_to_flow_second_frag"
@@ -39,7 +39,7 @@
 
     <fragment
         android:id="@+id/flow_second_frag"
-        android:name="com.msp.navigationdemo.SecondFragment"
+        android:name="com.example.navigationdemo.SecondFragment"
         tools:layout="@layout/fragment_second" >
         <action
             android:id="@+id/action_flow_second_frag_to_mainActivity"
@@ -51,7 +51,7 @@
 
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.msp.navigationdemo.Main2Activity"
+        android:name="com.example.navigationdemo.Main2Activity"
         android:label="activity_main2" />
 
 </navigation>
