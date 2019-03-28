@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/flow_first_frag">
+
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.msp.navigationdemo.Main2Activity"
+        android:label="activity_main2" />
+    <fragment
+        android:id="@+id/flow_second_frag3"
+        android:name="com.msp.navigationdemo.SecondFragment"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_flow_second_frag3_to_flow_second_frag"
+            app:destination="@id/flow_second_frag" />
+        <action
+            android:id="@+id/action_flow_second_frag3_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_flow_second_frag3_to_flow_first_frag"
+            app:destination="@id/flow_first_frag" />
+        <action
+            android:id="@+id/action_flow_second_frag3_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/flow_first_frag"
+        android:name="com.msp.navigationdemo.FirstFragment"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_flow_first_frag_to_flow_second_frag"
+            app:destination="@+id/mainActivity" />
+        <action
+            android:id="@+id/action_flow_first_frag_to_mainActivity"
+            app:destination="@id/flow_second_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flow_second_frag"
+        android:name="com.msp.navigationdemo.SecondFragment"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_flow_second_frag_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_flow_second_frag_to_mainActivity2"
+            app:destination="@id/mainActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.msp.navigationdemo.Main2Activity"
+        android:label="activity_main2" />
+
+</navigation>
